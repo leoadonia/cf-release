@@ -710,6 +710,8 @@ properties:
     tls:
       server_cert: ~
       server_key: ~
+      client_cert: ~
+      client_key: ~
       port: ~
       enable: ~
     etcd:
