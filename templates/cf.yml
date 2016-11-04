@@ -690,6 +690,12 @@ properties:
     outgoing_dropsonde_port: 8081
     tls:
       ca_cert: ~
+      doppler:
+        cert: ~
+        key: ~
+      trafficcontroller:
+        cert: ~
+        key: ~
     etcd:
       machines: [(( .properties.etcd.advertise_urls_dns_suffix ))]
       require_ssl: (( .properties.etcd.require_ssl ))
@@ -710,8 +716,6 @@ properties:
     tls:
       server_cert: ~
       server_key: ~
-      client_cert: ~
-      client_key: ~
       port: ~
       enable: ~
     etcd:

@@ -1419,6 +1419,12 @@ properties:
     outgoing_dropsonde_port: 8081
     tls:
       ca_cert: null
+      doppler:
+        cert: null
+        key: null
+      trafficcontroller:
+        cert: null
+        key: null
   loggregator_endpoint:
     shared_secret: LOGGREGATOR_ENDPOINT_SHARED_SECRET
   login:
