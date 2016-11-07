@@ -485,7 +485,9 @@ jobs:
         zone: z1
       route_registrar:
         routes: (( merge || meta.loggregator_trafficcontroller_routes ))
-    update: (( merge || empty_hash ))
+    update:
+      serial: true
+      max_in_flight: 1
 
   - name: loggregator_trafficcontroller_z2
     templates: (( merge || meta.loggregator_trafficcontroller_templates ))
@@ -511,7 +513,9 @@ jobs:
         zone: z2
       route_registrar:
         routes: (( merge || meta.loggregator_trafficcontroller_routes ))
-    update: (( merge || empty_hash ))
+    update:
+      serial: true
+      max_in_flight: 1
 
   - name: router_z1
     templates: (( merge || meta.router_templates ))

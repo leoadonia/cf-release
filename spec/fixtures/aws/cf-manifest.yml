@@ -842,7 +842,9 @@ jobs:
     release: cf
   - name: route_registrar
     release: cf
-  update: {}
+  update:
+    max_in_flight: 1
+    serial: true
 - default_networks:
   - name: cf2
   instances: 1
@@ -881,7 +883,9 @@ jobs:
     release: cf
   - name: route_registrar
     release: cf
-  update: {}
+  update:
+    max_in_flight: 1
+    serial: true
 - default_networks:
   - name: cf1
   instances: 1
