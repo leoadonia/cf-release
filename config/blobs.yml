@@ -111,10 +111,6 @@ cli/cf-cli_6.21.1_linux_x86-64.tgz:
   object_id: 0f4e5011-23d3-4eab-90bd-d6dd5b46c67d
   sha: 7dc397d2a0d93887ef50bc1f852beb686563049e
   size: 6543090
-golang/go1.7.windows-amd64.zip:
-  object_id: b0faa00a-3907-430a-953d-277c2b74effa
-  sha: e276c4b9093369706591ce5d21dfa799b9e0a475
-  size: 88793699
 consul/consul_0.7.0_linux_amd64.zip:
   object_id: f9cfff76-4c3a-4e51-963b-454ccc157003
   sha: 32d5f51c35b75216cf73cabe0329239355dc4266
@@ -123,6 +119,10 @@ haproxy/pcre-8.39.tar.gz:
   object_id: 0aab6e30-25b2-4844-90be-997feb090e3a
   sha: b3aec1f643d9701841e2f9d57ac121a7ff448fc8
   size: 2062258
+dotnet-core-buildpack/dotnet-core_buildpack-cached-v1.0.3.zip:
+  object_id: 268dc538-50bd-48b7-a259-2a92c29b19f1
+  sha: 1139a0e2c305bcfdbffe669e01c41fd2bab2671a
+  size: 122911094
 go-buildpack/go_buildpack-cached-v1.7.14.zip:
   object_id: 38961b0b-6c64-415f-b97a-5d0cec2c43c6
   sha: 50de509848ba6809053a97bfaf4c4f13a7623cae
@@ -159,7 +159,19 @@ java-buildpack/java-buildpack-offline-v3.10.zip:
   object_id: 660d2edf-3a0e-43f3-80c3-888652b298a8
   sha: aa0816fa7a6e6cb58648ff6fd76d14e4ddab0954
   size: 261228676
-rootfs/cflinuxfs2-1.89.0.tar.gz:
-  object_id: ed4db0f4-1df0-4136-a9b0-31fb7f04ae96
-  sha: ade09dfd1c689d36c468a5bb00b0882d0bfbe0e1
-  size: 278470854
+etcd/etcd-v2.1.1-linux-amd64.tar.gz:
+  object_id: ce50df26-f04b-496a-9ac4-32228020df6a
+  sha: d90a29e051f8dea2f5bb4200610ccbcec45497d7
+  size: 5608238
+consul-windows/consul_0.7.0_windows_amd64.zip:
+  object_id: 73276424-7529-4dca-bf47-8370a74cfb87
+  sha: b3c92be882b51a5b98b2b6994ef2bb18f57ded8b
+  size: 6431639
+golang/go1.7.3.windows-amd64.zip:
+  object_id: 0eb3c292-0fee-4bda-a9bc-6b035e2c04f3
+  sha: d10f32a97baa97344af80b6fa61374debe12124f
+  size: 88850225
+rootfs/cflinuxfs2-1.90.0.tar.gz:
+  object_id: 59059e37-ac07-4822-99b5-f8e4b1a724d8
+  sha: 6620831b4e8e096257e75df01b1f28a62504e6de
+  size: 347809504

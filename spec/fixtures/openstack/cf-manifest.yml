@@ -445,6 +445,8 @@ jobs:
     release: cf
   - name: staticfile-buildpack
     release: cf
+  - name: dotnet-core-buildpack
+    release: cf
   - name: cloud_controller_ng
     release: cf
   - name: cloud_controller_clock
@@ -508,6 +510,8 @@ jobs:
   - name: python-buildpack
     release: cf
   - name: staticfile-buildpack
+    release: cf
+  - name: dotnet-core-buildpack
     release: cf
   - name: cloud_controller_ng
     release: cf
@@ -1072,6 +1076,8 @@ properties:
       package: php-buildpack
     - name: binary_buildpack
       package: binary-buildpack
+    - name: dotnet_core_buildpack
+      package: dotnet-core-buildpack
     default_health_check_timeout: 60
     default_quota_definition: default
     default_running_security_groups:
@@ -1082,6 +1088,15 @@ properties:
     - dns
     default_to_diego_backend: false
     development_mode: false
+    diego:
+      insecure_docker_registry_list: null
+      temporary_local_staging: null
+      use_privileged_containers_for_staging: null
+      bbs:
+        url: null
+        ca_cert: null
+        client_cert: null
+        client_key: null
     directories: null
     disable_custom_buildpacks: false
     droplets:
@@ -1118,6 +1133,8 @@ properties:
       package: php-buildpack
     - name: binary_buildpack
       package: binary-buildpack
+    - name: dotnet_core_buildpack
+      package: dotnet-core-buildpack
     internal_api_password: BULK_API_PASSWORD
     internal_api_user: internal_user
     jobs:
@@ -1237,6 +1254,8 @@ properties:
       package: php-buildpack
     - name: binary_buildpack
       package: binary-buildpack
+    - name: dotnet_core_buildpack
+      package: dotnet-core-buildpack
     system_hostnames: null
     thresholds:
       api:
@@ -1568,7 +1587,7 @@ properties:
         authorities: uaa.none
         authorized-grant-types: password,refresh_token
         override: true
-        refresh-token-validity: 2592000
+        refresh-token-validity: 604800
         scope: cloud_controller.read,cloud_controller.write,openid,password.write,cloud_controller.admin,cloud_controller.admin_read_only,scim.read,scim.write,doppler.firehose,uaa.user,routing.router_groups.read,routing.router_groups.write
       cloud_controller_username_lookup:
         authorities: scim.userids
